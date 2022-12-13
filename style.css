@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* BASE */
+html{
+    height: 100%;
+}
+body{
+    font-family:  'Helvetica', sans-serif;
+    height: 100%;
+	color: #FFF!important;
+}
+header {
+	background: url(https://imagizer.imageshack.com/img923/9705/spEojS.png) no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 100%;
+}
+nav{
+	background: linear-gradient(black, transparent);
+}
+button{
+    font-weight: 700 !important;
+}
+i{
+    padding-right: .5rem;
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+}
+
+/* Estilos Customizados */
+
+.navbar-collapse{
+	justify-content: space-between;
+}
+.dropdown-menu{
+	right: 0;
+}
+.logo-filme{
+    max-width: 350px;
+    margin-bottom: .5rem;
+}
+.netflix-banner {
+	color: #FFF;
+	padding: 20px;
+	width: 45%;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	transition: .3s;
+    box-sizing: border-box;
+}
+.cards-wrapper {
+	display: flex;
+	height: 180px;
+	align-items: center;
+}
+
+.card-video {
+	cursor: pointer;
+	box-sizing: border-box;
+	margin: 0 0.5em;
+	max-width: 270px;
+	max-height: 152px;
+}
+
+.card-video img:hover{
+	transform: scale(1.2);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5vh;
+  height: 5vh;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .btn:hover{
+	color: #FFF!important;
+}
+
+@media (max-width: 768px) {
+    .netflix-banner{
+		width: 100%;
+		left: 50%;
+	}
+	.logo-filme{
+		width: 200px;
+	}
+}
+@media (max-width: 360px){
+	.cards-wrapper{
+		height: 100px;
+	} 
+}

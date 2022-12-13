@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/netflix.png">
+    <title>Netflix Réplica</title>
+</head>
+<body class="bg-dark">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 fixed-top">
+      <a class="navbar-brand" href="#">
+          <img src="img/netflix-logo.svg" width="100" height="30"  alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Séries</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bombando</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minha lista</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item my-auto mx-2">
+              <div class="container-fluid">
+                  <form class="d-flex input-group w-auto">
+                    <input
+                      type="search"
+                      class="form-control bg-dark text-white"
+                      placeholder="Buscar"
+                      aria-label="Search"
+                      aria-describedby="search-addon"
+                    />
+                    <span class="input-group-text text-white bg-dark" id="search-addon">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </form>
+              </div>
+          </li>
+          <li class="nav-item my-auto mx-2 align-text-top">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+          </li>
+          <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/user.png" width="30" height="30" alt="">
+              </a>
+              <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Gerenciar Perfils</a>
+                  <a class="dropdown-item" href="#">Transferir perfils</a>
+                  <a class="dropdown-item" href="#">Conta</a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container netflix-bannerWrapper">
+        <div class="netflix-banner">
+            <img src="https://imagizer.imageshack.com/img923/9140/wc1zEE.png" class="logo-filme" alt="Logo do filme Spiderhead">
+            <p>Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica</p>
+            <button type="button" class="btn btn-light btn-md"><i class="fa fa-play" aria-hidden="true"></i>Assistir</button>
+            <button type="button" class="btn  btn-secondary btn-md"><i class="fa fa-info-circle" aria-hidden="true"></i>Mais informações</button>
+        </div>
+    </div>
+  </header>
+
+  <main class="p-4">
+   
+    <section class="secao-filmes">
+      <h2>Minha lista</h2>
+      <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card-video">
+              <img src="img/poster_02.png" class="w-100" alt="Ozark">
+            </div>
+            <div class="card-video">
+              <img src="img/poster_04.png" class="w-100" alt="Breaking Bad">
+            </div>
+            <div class="card-video d-none d-sm-block">
+              <img src="img/poster_05.png" class="w-100" alt="The end of the Fucking World">
+            </div>
+            <div class="card-video d-none d-md-block">
+              <img src="img/poster_01.png" class="w-100" alt="Bojack">
+            </div>
+            <div class="card-video d-none d-lg-block">
+              <img src="img/poster_03.png" class="w-100" alt="A vizinha da mulher na janela">
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card-video ">
+                <img src="img/poster_07.png" class="w-100" alt="Pray Awya">
+              </div>
+              <div class="card-video ">
+                <img src="img/poster_06.png" class="w-100" alt="Boneca Russa">
+              </div>
+              <div class="card-video d-none d-sm-block">
+                <img src="img/poster_03.png" class="w-100" alt="A vizinha da mulher na janela">
+              </div>
+              <div class="card-video d-none d-md-block">
+                <img src="img/poster_04.png" class="w-100" alt="Breaking Bad">
+              </div>
+              <div class="card-video d-none d-lg-block">
+                <img src="img/poster_05.png" class="w-100" alt="The end of the Fucking World">
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section >
+      <h2>Em alta</h2>
+      <div id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card-video">
+              <img src="img/poster_02.png" class="w-100" alt="Ozark">
+            </div>
+            <div class="card-video">
+              <img src="img/poster_04.png" class="w-100" alt="Breaking Bad">
+            </div>
+            <div class="card-video d-none d-sm-block">
+              <img src="img/poster_05.png" class="w-100" alt="The end of the Fucking World">
+            </div>
+            <div class="card-video d-none d-md-block">
+              <img src="img/poster_01.png" class="w-100" alt="Bojack">
+            </div>
+            <div class="card-video d-none d-lg-block">
+              <img src="img/poster_03.png" class="w-100" alt="A vizinha da mulher na janela">
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card-video ">
+                <img src="img/poster_07.png" class="w-100" alt="Pray Awya">
+              </div>
+              <div class="card-video ">
+                <img src="img/poster_06.png" class="w-100" alt="Boneca Russa">
+              </div>
+              <div class="card-video d-none d-sm-block">
+                <img src="img/poster_03.png" class="w-100" alt="A vizinha da mulher na janela">
+              </div>
+              <div class="card-video d-none d-md-block">
+                <img src="img/poster_04.png" class="w-100" alt="Breaking Bad">
+              </div>
+              <div class="card-video d-none d-lg-block">
+                <img src="img/poster_05.png" class="w-100" alt="The end of the Fucking World">
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section>
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+        <!-- Instagram -->
+        <a
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-instagram"></i
+      ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fa fa-twitter"></i
+        ></a>
+  
+        <!-- Toutube -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fa fa-youtube-play"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Idioma e legendas</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Imprensa</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Privacidade</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Entre em contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled">
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Audiodescrição</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Relações com investidores</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Avisos legais</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Centro de ajuda</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Carreiras</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Preferência de cookies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled">
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Cartão pré-pago</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">Termos de uso</a>
+            </li>
+            <li class="py-1">
+              <a href="#!" class="text-secondary">informações corporativas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 pb-4">
+      <button type="button" class="btn btn-outline-secondary text-secondary" data-mdb-ripple-color="dark">Código do serviço</button>
+      <p class="text-secondary mt-3 small">© 1997-2022 Netflix, Inc.</p>
+    </div>
+  </footer>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
