@@ -4,7 +4,7 @@
 | -------------  | --- |
 | :sparkles: Name        | **Netflix Replica**
 | :label: Build With | html, css, bootstrap
-| :rocket: URL         | http://https://netflix-replica-hazel.vercel.app
+| :rocket: URL         | http://netflix-replica-lemon.vercel.app
 | :fire: Challenge     | https://7daysofcode.io/matricula/html-css-netflix
 
 ![](https://imagizer.imageshack.com/img923/5457/ALf1tX.png#vitrinedev)
